@@ -6,32 +6,66 @@
 /* Classes */
 .grid {
     display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    height: 600px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
   }
 
+  .celula{
+    width: 75px;
+    height: 45px;
+    font-size: 30px;
+    margin: 4px 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: aquamarine;
+
+  }
+
+  .container{
+    margin: 0 auto;
+    max-width: 260px;
+    min-height: 300px;
+    max-height: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: beige;
+    border: 3px solid black;
+  }
+
+  .font{
+    font-family: 'Oleo Script Swash Caps', cursive;
+  }
+
+  .block{
+    min-height: 40px;
+    height: 70px;
+    
 
 
-
-
-
-
+  }
 /* Tags */
- 
-  body{
-    font-family: 'Oleo Script Swash Caps', cursive;;
-  }
 
   h2{
     text-align: center;
-    font-size: 32px;
+    font-size: 29px;
+    padding: 0px;
   }
   
   /* Tags :hover */
 
   h2:hover{
-    font-size: 45px;
+    font-size: 37px;
     text-shadow: 5px 5px #D3D3D3;
     transition: .5s;
+  }
+
+  .celula:hover{
+    width: 70px;
+    height: 40px;
+    font-size: 25px;
+    transition: .9s;
   }
