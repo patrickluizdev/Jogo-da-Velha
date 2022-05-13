@@ -1,4 +1,20 @@
-    //JavaScript Jogo da Velha
+//JavaScript Jogo da Velha
 
-const celula = document.querySelectorAll("celula");
-console.log(celula);
+const celulas = document.querySelectorAll(".celula");
+let checarTurno = true;
+
+const jogadorX = "X";
+const jogadorO = "O";
+
+document.addEventListener("click", (event) => {
+  if (event.target.matches(".celula")) {
+    jogar(event.target.id);
+  }
+});
+
+function jogar(id) {
+  const celula = document.getElementById(id);
+  turno = checarTurno ? jogadorX : jogadorO;
+  celula.textContent = turno;
+  checarTurno = !checarTurno;
+}
